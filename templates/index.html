@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Breast Cancer Detection System</title>
+  <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  {% block nav %}
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" class="logo" /></a>
+        <div class="menu-toggle" id="mobile-menu">
+          <i class="bx bx-menu"></i>
+        </div>
+        <ul class="nav-list">
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('predict') }}">Predict</a></li>
+          
+          <li><a href="{{ url_for('contact') }}">About Us</a></li>
+          <!--<li><a href="{{ url_for('login') }}">Login</a></li>-->
+          <li><a href="{{ url_for('user_logout') }}">Logout</a></li>
+
+         
+
+          
+        </ul>
+      </div>
+    </nav>
+  </header>
+  {% endblock %}
+
+  {% block section %}
+  <main>
+    <section class="hero">
+        <div class="hero_img">
+            <img src="{{ url_for('static', filename='images/back.jpg') }}" alt="Breast Cancer Awareness" />
+        </div>
+        <div class="hero_info">
+            <h1>
+                LIVE LONG LIVE HEALTHY<br>
+               
+                <span class="description"> Health is wealth <span class="underline">Early Detection is Key</span></span>
+            </h1>
+            <button class="cta-button">Learn More</button>
+        </div>
+    </section>
+
+    <section class="info-cards">
+        <div class="card">
+            
+                
+          <p style="font-size: 2rem; margin-top: 20px; color: #34495e;">Predict Breast Cancer Outcome</p>
+                <br>
+                <p style="margin-top: 20px;">Utilize our advanced tools to assess risk factors and forecast potential outcomes. Empower yourself with knowledge for informed decisions.</p>
+
+
+
+
+            </a>
+        </div>
+        <div class="card">
+            
+               <img src="../static/images/motivation.jpeg" alt="">
+           
+        </div>
+        <div class="card">
+            
+                
+                <p>Meet the Team Behind This</p>
+                <p>Join us in our mission to promote early detection and support for those affected by breast cancer. Together, we can make a difference and save lives.</p>
+``
+
+            
+        </div>
+    </section>
+</main>
+
+  {% endblock %}
+
+  <section class="site-footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Locations</h3>
+            <a href="#">Nepal</a>
+            <a href="#">India</a>
+            <a href="#">Japan</a>
+            <a href="#">USA</a>
+            <a href="#">France</a>
+        </div>
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">FAQs</a>
+        </div>
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#">+977-9865289210</a>
+            <a href="#">+123-456-3333</a>
+            <a href="#">info@breastdetection.com</a>
+            <a href="#">support@breastdetection.com</a>
+            <a href="#">Kathmandu, Nepal - 4012345</a>
+        </div>
+        <div class="box">
+            <h3>Follow Us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <h2>Your Health is Our Mission</h2>
+    </div>
+  </footer>
+</body>
+
+</html>

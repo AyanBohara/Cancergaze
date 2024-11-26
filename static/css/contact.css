@@ -1,0 +1,137 @@
+/* contact.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    /* Light background color */
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    padding: 2rem;
+}
+
+.about-container {
+    max-width: 1200px;
+    /* Maximum width for better layout */
+    margin: 0 auto;
+    /* Center the container */
+    text-align: center;
+    /* Center align text */
+}
+
+.sub-heading {
+    color: #3a993a;
+    /* Green color */
+    font-size: 1.5rem;
+    /* Smaller font for sub-heading */
+}
+
+.heading {
+    color: #333;
+    /* Dark color for main heading */
+    font-size: 2.5rem;
+    /* Larger font for main heading */
+    margin-bottom: 1.5rem;
+    /* Space below heading */
+}
+
+.about-content {
+    display: flex;
+    /* Flexbox for layout */
+    flex-wrap: wrap;
+    /* Allow wrapping */
+    gap: 2rem;
+    /* Space between elements */
+    justify-content: center;
+    /* Center align content */
+    align-items: center;
+    /* Align items center */
+}
+
+.about-image img {
+    width: 100%;
+    /* Full width of its container */
+    max-width: 400px;
+    /* Limit maximum width */
+    border-radius: 10px;
+    /* Rounded corners for the image */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+.about-details {
+    flex: 1;
+    /* Take remaining space */
+    max-width: 600px;
+    /* Limit maximum width */
+    text-align: left;
+    /* Align text to the left */
+}
+
+.about-details h3 {
+    color: #007BFF;
+    /* Blue color for sub-heading */
+    font-size: 2rem;
+    /* Font size for the mission heading */
+    margin-bottom: 1rem;
+    /* Space below heading */
+}
+
+.about-details p {
+    color: #555;
+    /* Dark gray for text */
+    font-size: 1rem;
+    /* Font size for paragraph */
+    line-height: 1.6;
+    /* Line height for readability */
+}
+
+.features {
+    display: flex;
+    /* Flexbox for layout */
+    gap: 2rem;
+    /* Space between feature items */
+    margin-top: 2rem;
+    /* Space above features */
+    flex-wrap: wrap;
+    /* Allow wrapping */
+    justify-content: center;
+    /* Center align feature items */
+}
+
+.feature-item {
+    background: #e7f3ff;
+    /* Light blue background */
+    border-radius: 8px;
+    /* Rounded corners */
+    padding: 1rem;
+    /* Padding inside feature item */
+    flex: 1 1 250px;
+    /* Allow item to grow */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Shadow effect */
+    text-align: center;
+    /* Center align text */
+}
+
+.feature-item h4 {
+    color: #007BFF;
+    /* Blue color for feature title */
+    margin: 0.5rem 0;
+    /* Margin above and below */
+}
+
+.feature-item p {
+    color: #666;
+    /* Medium gray for feature description */
+    font-size: 0.9rem;
+    /* Font size for description */
+}
+
+/* Section styling */
+section:nth-child(even) {
+    background: #fafafa;
+    /* Light cyan background for even sections */
+}

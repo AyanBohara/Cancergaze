@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    color: #ff69b4;
+}
+
+.intro p {
+    margin: 10px 0;
+}
+
+.details {
+    margin-bottom: 30px;
+}
+
+.details article {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.details h2 {
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+.details ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.model {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.model h2 {
+    color: #ff69b4;
+    margin-bottom: 15px;
+}
+
+.model h3 {
+    color: #ff69b4;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.model p {
+    margin: 10px 0;
+}
+
+.model-equations {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.model-equations .equation {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.model-details {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.model-details p {
+    font-family: monospace;
+}
+
+.model-details p sup {
+    font-size: 0.8em;
+}
+
+hr {
+    border: 1px solid #ff69b4;
+    margin: 30px 0;
+}

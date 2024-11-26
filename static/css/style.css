@@ -1,0 +1,180 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #34495e;
+    padding: 1rem;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-list li a:hover {
+    background-color: #1abc9c;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    position: relative;
+    /* Relative positioning for absolute children */
+    height: 80vh;
+    /* Set height for the hero section */
+    overflow: hidden;
+    /* Hide any overflow */
+}
+
+.hero_img img {
+    width: 100%;
+    /* Make image full width */
+    height: 100%;
+    /* Make image full height */
+    object-fit: cover;
+    /* Cover the entire area without distortion */
+    position: absolute;
+    /* Position the image absolutely */
+    top: 0;
+    /* Align to the top */
+    left: 0;
+    /* Align to the left */
+    z-index: 1;
+    /* Ensure it is behind the content */
+}
+
+.hero_info {
+    position: relative;
+    /* Position the text content */
+    z-index: 2;
+    /* Ensure it is on top of the background image */
+    color: white;
+    /* Set text color */
+    text-align: center;
+    /* Center the text */
+    padding: 12rem;
+    /* Add padding */
+}
+
+.hero_info h1 {
+    font-size: 3rem;
+    /* Title size */
+    margin-bottom: 10px;
+    /* Space below title */
+}
+
+.hero_info .date {
+    font-size: 1.5rem;
+    /* Date size */
+    display: block;
+    /* Ensure it's on a new line */
+}
+
+.hero_info .description {
+    font-size: 1.2rem;
+    /* Description size */
+}
+
+.cta-button {
+    background-color: #e74c3c;
+    /* Button color */
+    color: white;
+    /* Button text color */
+    padding: 10px 20px;
+    /* Button padding */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 1rem;
+    /* Button font size */
+    cursor: pointer;
+    /* Cursor on hover */
+    transition: background-color 0.3s;
+    /* Transition effect */
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+    /* Darker shade on hover */
+}
+
+/* Info Cards */
+.info-cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Scale effect on hover */
+}
+
+/* Site Footer */
+.site-footer {
+    background-color: #2c3e50;
+    padding: 2rem;
+    color: white;
+}
+
+.site-footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.site-footer .box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ecf0f1;
+}
+
+.site-footer .box a {
+    color: #bdc3c7;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.site-footer .box a:hover {
+    color: #1abc9c;
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}

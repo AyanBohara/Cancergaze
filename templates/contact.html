@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+  <link rel="stylesheet" href="../static/css/contact.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    {% extends "index.html" %}
+
+    {% block title %}About Us{% endblock %}
+
+    {% block section %}
+    <section class="about" id="about">
+        <div class="about-container">
+            <h3 class="sub-heading">About Us</h3>
+            <h1 class="heading">Why Choose Our Breast Disease Detection Service?</h1>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://media.istockphoto.com/id/513438487/photo/doctors-and-nurses-smiling-in-hospital-hallway.webp?b=1&s=170667a&w=0&k=20&c=jsO4pM2BRMv0nLcz-_p_fu82KHWyMtaPds8csig64Xw=" alt="Breast Disease Detection">
+                </div>
+                <div class="about-details">
+                   
+                    <p>Our state-of-the-art facility is dedicated to early detection and prevention of breast diseases. We employ advanced diagnostic technologies and methodologies to ensure that our patients receive the best possible care.</p>
+                    <p>We understand that navigating health concerns can be daunting. Our compassionate team is here to provide you with comprehensive support and guidance every step of the way.</p>
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="fas fa-user-md"></i>
+                            <h4>Expert Care</h4>
+                            <p>Our team consists of experienced healthcare professionals dedicated to your well-being.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-flask"></i>
+                            <h4>Advanced Technology</h4>
+                            <p>We utilize the latest diagnostic tools and techniques for accurate results.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <h4>Quick Results</h4>
+                            <p>Timely testing and feedback ensure you get the care you need without delay.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
+    
+    <script type="text/javascript" src="{{ url_for('static', filename='about.js') }}"></script>
+</body>
+
+</html>

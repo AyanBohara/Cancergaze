@@ -1,0 +1,139 @@
+/* static/css/predict.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #add3d8;
+  color: #333;
+}
+
+.form {
+  width: 60%;
+  margin: 50px auto;
+  padding: 30px;
+  /* Increased padding for a spacious look */
+  border-radius: 10px;
+  /* Rounded corners */
+  background: linear-gradient(to right, #ffe4e1, #e6e6fa);
+  /* Gradient background */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  /* Soft shadow */
+}
+
+.title {
+  font-size: 26px;
+  /* Increased font size for better visibility */
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #4b0082;
+  /* Indigo color for a fresh look */
+  text-align: center;
+}
+
+.message {
+  font-size: 16px;
+  /* Slightly increased font size */
+  margin-bottom: 20px;
+  text-align: center;
+  color: #8b008b;
+  /* Dark magenta color */
+}
+
+.form-group {
+  margin-bottom: 20px;
+  /* More space between form groups */
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #483d8b;
+  /* Dark slate blue color */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  /* Increased padding for a comfortable input experience */
+  border: 2px solid #8b008b;
+  /* Dark magenta border */
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s;
+  /* Smooth transition for border color */
+}
+
+.form-group input:focus {
+  border-color: #4b0082;
+  /* Change border color on focus */
+}
+
+.submit {
+  display: inline-block;
+  padding: 12px 24px;
+  /* Increased padding for button */
+  border: none;
+  border-radius: 5px;
+  background-color: #8b008b;
+  /* Dark magenta background */
+  color: #fff;
+  font-size: 18px;
+  /* Increased font size for button */
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Added transition for hover effect */
+}
+
+.submit:hover {
+  background-color: #4b0082;
+  /* Change background on hover */
+  transform: scale(1.05);
+  /* Slight scale effect on hover */
+}
+
+.predict-result {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.predict-result p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #8b008b;
+  /* Dark magenta color for prediction message */
+}
+
+.predict-result h2 {
+  font-size: 24px;
+  color: #19ab20;
+  /* Indigo color for prediction result */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 22px;
+  }
+
+  .message {
+    font-size: 14px;
+  }
+
+  .submit {
+    font-size: 16px;
+  }
+}

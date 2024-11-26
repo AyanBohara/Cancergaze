@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Overview</title>
+  <link rel="stylesheet" href="../css/data.css" />
+</head>
+
+
+{% extends "index.html" %}
+{% block title %}Data Overview{% endblock %}
+{% block section %}
+<body>
+<div class="container">
+    <section class="intro">
+        <h1>Breast Cancer Dataset Overview</h1>
+        <p>
+            The dataset used in this system is developed by the <b>Wisconsin Hospital</b> for breast cancer research. It is a significant contribution to understanding breast cancer, helping to improve diagnosis and treatment.
+        </p>
+    </section>
+
+    <section class="details">
+        <article>
+            <h2>Dataset Source and Collection</h2>
+            <ul>
+                <li>The dataset contains information about patients with cancerous and non-cancerous tissues, collected through interactive image processing at Wisconsin Hospital.</li>
+                =
+            </ul>
+        </article>
+
+        <article>
+            <h2>Pathological Analysis</h2>
+            <ul>
+                <li>Samples are analyzed by pathologists under a microscope to identify abnormalities in cellular structures that may indicate cancer.</li>
+                <li>The analysis focuses on characteristics such as shape, size, and arrangement of cell nuclei, providing valuable insights into potential malignancy.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Feature Computation</h2>
+            <ul>
+                <li>Features are computed for each nucleus based on microscopic analysis, including textural characteristics.</li>
+                <li>Examples include nucleus size, shape, texture, and other measurements that help characterize cell abnormalities.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>System Implementation</h2>
+            <ul>
+                <li>The system uses these features to develop a model for breast cancer prediction.</li>
+                <li>Machine learning techniques are employed to train the system on the dataset, identifying patterns and correlations between features and the presence of breast cancer.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Significance of the System</h2>
+            <ul>
+                <li>The system assists in the early detection of breast cancer by providing accurate diagnoses with high accuracy.</li>
+                <li>Early detection is crucial for successful treatment and improved patient outcomes. The system aids in the quick and accurate analysis of large datasets, supporting healthcare professionals monitoring multiple patients.</li>
+            </ul>
+        </article>
+    </section>
+
+    <hr />
+
+    <section class="model">
+        <h2>Implemented Model</h2>
+        <p>
+            This system is developed using logistic regression, a widely used model for binary classification in machine learning. It models the probability that a given input belongs to a particular class.
+        </p>
+        <div class="model-equations">
+            <p>
+                <span class="equation">f(w, b(x)) = g(w · x + b)</span>
+            </p>
+            <p>
+                <span class="equation">g(z) = 1 / (1 + e<sup>-z</sup>)</span>
+            </p>
+        </div>
+        <div class="model-details">
+            <h3>Objective:</h3>
+            <p>Find the optimal values for the parameters (w, b) that provide accurate class probabilities.</p>
+
+            <h3>Forward Pass:</h3>
+            <p>Compute the linear combination of input features x with the weight vector w and the bias term b.</p>
+            <p>Apply the sigmoid function to the result:</p>
+            <p>Z = x ⋅ w + b</p>
+            <p>A = σ(Z)</p>
+
+            <h3>Cost Function:</h3>
+            <p>Measure the error between predicted probabilities and true labels using binary cross-entropy loss:</p>
+            <p>J(w, b) = -1/m ∑[y<sub>i</sub> log(f<sub>w,b</sub>(x<sub>i</sub>)) + (1-y<sub>i</sub>) log(1-f<sub>w,b</sub>(x<sub>i</sub>))]</p>
+
+            <h3>Backward Pass (Gradient Computation):</h3>
+            <p>Calculate the gradients of the cost function with respect to parameters (w, b):</p>
+            <p>∂J/∂b = 1/m ∑(f<sub>w,b</sub>(x<sub>i</sub>) - y<sub>i</sub>)</p>
+            <p>∂J/∂w = 1/m ∑(f<sub>w,b</sub>(x<sub>i</sub>) - y<sub>i</sub>)x<sub>i</sub></p>
+
+            <h3>Training Process:</h3>
+            <p>Update parameters (w, b) using an optimization algorithm (e.g., gradient descent):</p>
+            <p>w ← w - α ∂J/∂w</p>
+            <p>b ← b - α ∂J/∂b</p>
+
+            <h3>Iteration:</h3>
+            <p>Iterate through the training process, performing forward and backward passes, to minimize the cost function.</p>
+        </div>
+    </section>
+</div>
+{% endblock %}
+</body>
+</html>
